@@ -1,5 +1,6 @@
 
 
+
 ## Getting Started
 
 In the shell:
@@ -177,4 +178,5 @@ If you see the warning:
 you may have a computer with less CPUs than the number of Ports you are configured to service. Go
 to your `src/configuration/application.go` file and edit the `Ports` field of your target configuration.
 This warning disappears when there are sufficient CPUs to service all of the designated ports.
+
 
