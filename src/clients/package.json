@@ -1,0 +1,30 @@
+{
+  "name": "softarc",
+  "author": "Brian Ledger",
+  "version": "0.0.1",
+  "description": "clients of softarc llc",
+  "private": true,
+  "scripts": {},
+  "dependencies": {
+    "backbone": "^1.3.3",
+    "coffee-loader": "^0.7.2",
+    "coffee-script": "^1.10.0",
+    "css-loader": "*",
+    "d3": "^3.5.17",
+    "file-loader": "^0.8.5",
+    "jquery": "^2.2.4",
+    "markdown": "^0.5.0",
+    "msgpack-js-browser": "^0.1.4",
+    "raw-loader": "^0.5.1",
+    "regulex": "0.0.2",
+    "style-loader": "*",
+    "underscore": "^1.8.3",
+    "url-loader": "*",
+    "webpack": "*"
+  },
+  "devDependencies": {
+    "coffee-script": "*",
+    "node-sass": "^3.7.0",
+    "sass-loader": "^3.2.0"
+  }
+}

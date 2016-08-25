@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "IntervalPicker.js",
+  "sourceRoot": "",
+  "sources": [
+    "IntervalPicker.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;;AAAA"
+}

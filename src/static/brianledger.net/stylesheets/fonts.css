@@ -1,0 +1,277 @@
+@font-face {
+  font-family: "Computer Modern";
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmunsi.ttf);
+  font-style: italic, oblique;
+}
+
+@font-face {
+  font-family: "Computer Modern";
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmunbxo.ttf);
+  font-weight: bold;
+  font-style: italic, oblique;
+}
+
+@font-face {
+  font-family: "Computer Modern";
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmunsx.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Computer Modern";
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmunss.ttf);
+}
+
+
+@font-face {
+  font-family: DINNextLTPro;
+  src: url(/cdn/fonts/dinnextltpro-boldcondensed.ttf);
+  font-stretch: condensed;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: DINNextLTPro;
+  src: url(/cdn/fonts/dinnextltpro-bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: DINNextLTPro;
+  src: url(/cdn/fonts/dinnextltpro-lightcondensed.ttf);
+  font-stretch: condensed;
+  font-stretch: condensed;
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: DINNextLTPro;
+  src: url(/cdn/fonts/dinnextltpro-light.ttf);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: DINNextLTPro;
+  src: url(/cdn/fonts/dinnextltpro-condensed.ttf);
+  font-stretch: condensed;
+}
+
+@font-face {
+  font-family: DINNextLTPro;
+  src: url(/cdn/fonts/dinnextltpro-light.ttf);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: DINNextLTPro;
+  src: url(/cdn/fonts/dinnextltpro-medium.ttf);
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: DINNextLTPro;
+  src: url(/cdn/fonts/dinnextltpro-regular.ttf);
+}
+
+
+@font-face {
+  font-family: DINNextLTProRounded-Light;
+  src: url(/cdn/fonts/dinnextltprorounded-light.otf);
+  font-stretch: condensed;
+}
+
+@font-face {
+  font-family: DINNextLTProRounded-Medium;
+  src: url(/cdn/fonts/dinnextltprorounded-medium.otf);
+  font-stretch: expanded;
+}
+
+@font-face {
+  font-family: DINNextLTProRounded;
+  src: url(/cdn/fonts/dinnextltprorounded-regular.otf);
+}
+
+@font-face {
+  font-family: cmunbbx;
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmunbbx.ttf);
+}
+
+@font-face {
+  font-family: cmunbi;
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmunbi.ttf);
+}
+
+@font-face {
+  font-family: cmunbl;
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmunbl.ttf);
+}
+
+@font-face {
+  font-family: cmunbmo;
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmunbmo.ttf);
+}
+
+@font-face {
+  font-family: cmunbmr;
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmunbmr.ttf);
+}
+
+@font-face {
+  font-family: cmunbso;
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmunbso.ttf);
+}
+
+@font-face {
+  font-family: cmunbsr;
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmunbsr.ttf);
+}
+
+@font-face {
+  font-family: cmunbtl;
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmunbtl.ttf);
+}
+
+@font-face {
+  font-family: cmunbto;
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmunbto.ttf);
+}
+
+@font-face {
+  font-family: cmunbx;
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmunbx.ttf);
+}
+
+@font-face {
+  font-family: cmunci;
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmunci.ttf);
+}
+
+@font-face {
+  font-family: cmunit;
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmunit.ttf);
+}
+
+@font-face {
+  font-family: cmunobi;
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmunobi.ttf);
+}
+
+@font-face {
+  font-family: cmunobx;
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmunobx.ttf);
+}
+
+@font-face {
+  font-family: cmunorm;
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmunorm.ttf);
+}
+
+@font-face {
+  font-family: cmunoti;
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmunoti.ttf);
+}
+
+@font-face {
+  font-family: cmunrb;
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmunrb.ttf);
+}
+
+@font-face {
+  font-family: cmunrm;
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmunrm.ttf);
+}
+
+@font-face {
+  font-family: cmunsl;
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmunsl.ttf);
+}
+
+@font-face {
+  font-family: cmunso;
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmunso.ttf);
+}
+
+@font-face {
+  font-family: cmunssdc;
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmunssdc.ttf);
+}
+
+@font-face {
+  font-family: cmunst;
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmunst.ttf);
+}
+
+@font-face {
+  font-family: cmuntb;
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmuntb.ttf);
+}
+
+@font-face {
+  font-family: cmunti;
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmunti.ttf);
+}
+
+@font-face {
+  font-family: cmuntt;
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmuntt.ttf);
+}
+
+@font-face {
+  font-family: cmuntx;
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmuntx.ttf);
+}
+
+@font-face {
+  font-family: cmunui;
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmunui.ttf);
+}
+
+@font-face {
+  font-family: cmunvi;
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmunvi.ttf);
+}
+
+@font-face {
+  font-family: cmunvt;
+  src: url(/cdn/fonts/cm-unicode-0.7.0/cmunvt.ttf);
+}
+
+@font-face {
+  font-family: Mercury-DisplaySemiboldSC;
+  src: url(/cdn/fonts/Mercury-DisplaySemiboldSC.otf);
+}
+
+@font-face {
+  font-family: Mercury-TextG1Italic;
+  src: url(/cdn/fonts/Mercury-TextG1Italic.otf);
+}
+
+@font-face {
+  font-family: Mercury-TextG1SemiboldSC;
+  src: url(/cdn/fonts/Mercury-TextG1SemiboldSC.otf);
+}
+
+@font-face {
+  font-family: Mercury-TextG2RomanSC;
+  src: url(/cdn/fonts/Mercury-TextG2RomanSC.otf);
+}
+
+@font-face {
+  font-family: Mercury-TextG3RomanSC;
+  src: url(/cdn/fonts/Mercury-TextG3RomanSC.otf);
+}
+
+@font-face {
+  font-family: Mercury-TextG4Roman;
+  src: url(/cdn/fonts/Mercury-TextG4Roman.otf);
+}
+
+@font-face {
+  font-family: Monosten-E;
+  src: url(/cdn/fonts/Monosten-E.ttf);
+}
+
+@font-face {
+  font-family: MyriadPro-Regular;
+  src: url(/cdn/fonts/MyriadPro-Regular.otf);
+}

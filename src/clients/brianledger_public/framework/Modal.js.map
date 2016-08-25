@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "Modal.js",
+  "sourceRoot": "",
+  "sources": [
+    "Modal.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAEA;EAAM,EAAE,CAAC,SAAS,CAAC;;;;;;;EAGb,EAAE,CAAC,SAAS,CAAC;;;;;;AAHnB"
+}

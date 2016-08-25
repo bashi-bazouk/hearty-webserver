@@ -1,0 +1,367 @@
+
+$DEFAULT-COLOR: black;
+
+$PURPLE-RAIN: #F7EBF0;
+$BLUISH: #35B0FB;
+
+$LINK-COLOR: #008DBB;
+$VISITED-LINK-COLOR: #008DBB;
+//$VISITED-LINK-COLOR: #323234;
+
+$CELL-BORDER-COLOR: gray;
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin stack-interface($position) {
+    position: $position;
+    & > * {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        z-index: 0;
+        &:first-child { z-index: 1; };
+    }
+
+}
+
+@mixin noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@mixin box-shadow($offset-x, $offset-y, $blur, $spread, $color) {
+    -webkit-box-shadow: $offset-x $offset-y $blur $spread $color;
+    -moz-box-shadow: $offset-x $offset-y $blur $spread $color;
+    box-shadow: $offset-x $offset-y $blur $spread $color;
+}
+
+@mixin filter($filter) {
+    filter: $filter;
+    -webkit-filter: $filter;
+}
+
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+@mixin user-select($setting) {
+    user-select: $setting;
+    -moz-user-select: $setting;
+    -webkit-user-select: $setting;
+    -ms-user-select: $setting;
+    -o-user-select: $setting;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('/cdn/images/bg.png');
+
+    font-family: "Computer Modern", sans-serif;
+
+    color: $DEFAULT-COLOR;
+}
+
+a {
+    color: $LINK-COLOR;
+    &:visited { color: $VISITED-LINK-COLOR; }
+}
+
+button {
+    @include noselect();
+    padding: calc(0.1em + 4px) 1em 4px 1em;
+
+    font-family: DINNextLTProRounded;
+    font-size: 1.2em;
+    font-weight: lighter;
+    min-height: 1.5rem;
+
+    border: 1px solid #{$BLUISH};
+    @include border-radius(2px);
+
+    color: $VISITED-LINK-COLOR;
+
+    background-color: $PURPLE-RAIN;
+
+    &.disabled {
+        @include filter(grayscale(1));
+        @include transition(300ms linear);
+    }
+
+    &:enabled { cursor: pointer; }
+    outline: none;
+
+    &:enabled:hover:not(:active, .disabled) {
+        @include box-shadow(0,0, 2px, 1px, $BLUISH);
+    }
+}
+
+h1 {
+    font-family: DINNextLTProRounded;
+    font-size: 1.4rem;
+    color: #323234;
+}
+
+.cell {
+    margin: 1px;
+    padding: 4px;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    border: 1px solid #{$CELL-BORDER-COLOR};
+    border-radius: 2px;
+
+}
+
+
+.combine {
+    display: flex;
+    justify-content: center;
+
+    > * {
+        flex: 0 0 auto;
+    }
+
+    &.align-right {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &.align-top {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+#sidebar {
+    width: calc(1.5in + 12px);
+
+
+    #profile-picture {
+        display: inline-block;
+
+        background-color: white;
+
+        cursor: pointer;
+
+        img {
+            display: block;
+            max-width: 1.5in;
+            max-height: 1.5in;
+        }
+    }
+
+    #navigator {
+        text-align: right;
+        border: none;
+
+        a {
+            display: block;
+            white-space: nowrap;
+            text-decoration: none;
+            font-family: DINNextLTProRounded;
+            font-size: 1.2rem;
+            font-weight: lighter;
+            margin-bottom: 0.3rem;
+        }
+    }
+
+}
+
+#information {
+    box-sizing: border-box;
+
+    h2 {
+        font-weight: bold;
+        font-size: 1.2rem
+
+    }
+
+    .row {
+
+        margin-top: 5px;
+
+        display: block;
+
+        label {
+            display: inline-block;
+            width: 16em;
+        }
+        .attribute {
+            display: inline-block;
+
+        }
+    }
+
+    .row + h2 { margin-top: 0.5em }
+
+    h2 + .row { margin-top: 0 }
+
+}
+
+#message-board {
+    overflow-y: scroll;
+
+    .message {
+        min-width: 30rem;
+        min-height: 1.5rem;
+        margin: 2px 1px;
+        padding: .4em;
+
+        background-color: white;
+
+        font-family: "Computer Modern";
+
+        outline: none;
+    }
+
+    .message:first-child {
+        margin: 1px;
+
+        &:empty:not(:focus):before {
+            content: attr(data-placeholder);
+            color: #{lighten($DEFAULT-COLOR, 50%)};
+        }
+    }
+
+    #post-message {
+        margin: 1px;
+
+        &:enabled:hover:not(:active) {
+            cursor: pointer;
+            overflow: visible;
+        }
+    }
+}
+
+#technical-writing {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+    padding: 0.5in;
+
+    @include user-select(none);
+    cursor: -webkit-grab;
+
+    > * {
+        max-width: 7.5in;
+        margin-right: 1in;
+    }
+
+    &:after {
+        content: "";
+        width: 8in;
+        height: 1px;
+    }
+
+}
+
+#authenticator {
+    width: 25rem;
+
+    @include stack-interface(relative);
+    position: relative;
+
+    h1 {
+
+        width: 90%;
+        margin: 1em 5%;
+    }
+
+    > * {
+        @include stack-interface(absolute);
+
+        background-color: white;
+
+        & > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+        }
+    }
+
+
+    .error {
+        @include noselect();
+        position: relative;
+        width: 90%;
+        height: 0;
+        padding: 0 5%;
+        text-align: right;
+        bottom: 1.1em;
+        color: #E80E0E;
+        visibility: hidden;
+    }
+
+    .info {
+        width: 22.5rem;
+        margin: 0 1.25rem;
+    }
+
+    .actions {
+        width: 30%;
+        margin-top: 1.875rem;
+        margin-right: 1.275rem;
+        button {
+            width: 100%;
+            margin-top: 1.275rem;
+            &:first-child { margin-top: 0 }
+        }
+    }
+
+
+    input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0.4em;
+
+        margin-top: 1.275rem;
+        &:first-child { margin-top: 0; }
+
+        border: 1px solid #{$CELL-BORDER-COLOR};
+        border-radius: 2px;
+    }
+}
+
+#resume {
+    box-sizing: border-box;
+    padding: 4px;
+    border: 1px solid gray;
+    margin: 1px;
+
+    border-radius: 2px;
+
+    overflow: hidden;
+
+    iframe {
+        width: 21.3cm;
+        height: 29cm;
+    }
+}

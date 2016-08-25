@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "Request.js",
+  "sourceRoot": "",
+  "sources": [
+    "Request.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAEA;AAAA,MAAA;;EAAM;AAEL,QAAA;;;;;;aAAa,CAAC,OAAC,CAAA,IAAD,GAAM,CAAA,CAAE,mKAAF,CAAP;;;;;AAFd"
+}
